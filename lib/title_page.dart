@@ -52,6 +52,19 @@ import 'package:cookbook/networking/fetch_data.dart';
 import 'package:cookbook/networking/send_data.dart';
 import 'package:cookbook/networking/update_data_over_network.dart';
 import 'package:cookbook/networking/web_socket.dart';
+import 'package:cookbook/persistence/read_write_files.dart';
+import 'package:cookbook/persistence/sqflite.dart';
+import 'package:cookbook/persistence/store_key_value.dart';
+import 'package:cookbook/plugin/picture_using_camera.dart';
+import 'package:cookbook/plugin/play_video.dart';
+import 'package:cookbook/testing/integeration/introduction.dart';
+import 'package:cookbook/testing/integeration/profiling.dart';
+import 'package:cookbook/testing/integeration/scrolling.dart';
+import 'package:cookbook/testing/unit/introduction.dart';
+import 'package:cookbook/testing/unit/mock_dependencies.dart';
+import 'package:cookbook/testing/widget/find_widget.dart';
+import 'package:cookbook/testing/widget/introduction_widget.dart';
+import 'package:cookbook/testing/widget/tap_drag.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -123,8 +136,6 @@ class _TitlePageState extends State<TitlePage> {
 }
 
 void contentSwitchBuilder(model, context) {
-  print('id =========> ${model.id}');
-
   switch (model.id) {
     case 101:
       Navigator.push(
@@ -343,6 +354,63 @@ void contentSwitchBuilder(model, context) {
     case 1007:
       Navigator.push(
           context, MaterialPageRoute(builder: (context) => ExampleWebSocket()));
+      break;
+
+    case 1101:
+      Navigator.push(
+          context, MaterialPageRoute(builder: (context) => ExampleSqflite()));
+      break;
+    case 1102:
+      Navigator.push(
+          context, MaterialPageRoute(builder: (context) => ReadWriteFiles()));
+      break;
+    case 1103:
+      Navigator.push(
+          context, MaterialPageRoute(builder: (context) => StoreKeyValue()));
+      break;
+
+    case 1201:
+      Navigator.push(
+          context, MaterialPageRoute(builder: (context) => PlayVideo()));
+      break;
+    case 1202:
+      Navigator.push(
+          context, MaterialPageRoute(builder: (context) => PictureUsingCamera()));
+      break;
+
+    case 13011:
+      Navigator.push(
+          context, MaterialPageRoute(builder: (context) => Introduction()));
+      break;
+    case 13012:
+      Navigator.push(
+          context, MaterialPageRoute(builder: (context) => Scrolling()));
+      break;
+    case 13013:
+      Navigator.push(
+          context, MaterialPageRoute(builder: (context) => Profiling()));
+      break;
+
+    case 13021:
+      Navigator.push(
+          context, MaterialPageRoute(builder: (context) => IntroductionUnit()));
+      break;
+    case 13022:
+      Navigator.push(
+          context, MaterialPageRoute(builder: (context) => MockDependencies()));
+      break;
+
+    case 13031:
+      Navigator.push(
+          context, MaterialPageRoute(builder: (context) => IntroductionWidget()));
+      break;
+    case 13032:
+      Navigator.push(
+          context, MaterialPageRoute(builder: (context) => FindWidget()));
+      break;
+    case 13033:
+      Navigator.push(
+          context, MaterialPageRoute(builder: (context) => TapDrag()));
       break;
   }
 }
