@@ -22,7 +22,7 @@ class _AnimatedContainerAppState extends State<AnimatedContainerApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('AnimatedContainer Demo'),
+          title: const Text('Animate the properties of a container'),
         ),
         body: Center(
           child: AnimatedContainer(

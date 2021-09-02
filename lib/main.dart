@@ -1,4 +1,3 @@
-import 'package:cookbook/sub_title_page.dart';
 import 'package:cookbook/title_page.dart';
 import 'package:flutter/material.dart';
 

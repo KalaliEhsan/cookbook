@@ -11,7 +11,7 @@ class Page1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(title: Text('Animate a page route transition')),
       body: Center(
         child: ElevatedButton(
           onPressed: () {

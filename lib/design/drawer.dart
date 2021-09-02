@@ -1,14 +1,10 @@
 import 'package:flutter/material.dart';
 
 class MyDrawer extends StatelessWidget {
-  const MyDrawer({Key? key, required this.title}) : super(key: key);
-
-  final String title;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(title)),
+      appBar: AppBar(title: Text('Add a Drawer to a screen')),
       body: const Center(
         child: Text('My Page!'),
       ),

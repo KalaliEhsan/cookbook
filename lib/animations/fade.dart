@@ -3,13 +3,6 @@ import 'package:flutter/material.dart';
 // The StatefulWidget's job is to take data and create a State class.
 // In this case, the widget takes a title, and creates a _MyHomePageState.
 class Fade extends StatefulWidget {
-  const Fade({
-    Key? key,
-    required this.title,
-  }) : super(key: key);
-
-  final String title;
-
   @override
   _FadeState createState() => _FadeState();
 }
@@ -24,7 +17,7 @@ class _FadeState extends State<Fade> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text('Fade a widget in and out'),
       ),
       body: Center(
         child: AnimatedOpacity(

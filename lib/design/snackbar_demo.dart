@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 
 class SnackBarDemo extends StatelessWidget {
-  const SnackBarDemo({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'SnackBar Demo',
+      title: 'Display a snackbar',
       home: Scaffold(
         appBar: AppBar(
           title: const Text('SnackBar Demo'),

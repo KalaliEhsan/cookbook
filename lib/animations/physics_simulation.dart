@@ -8,7 +8,7 @@ class PhysicsCardDragDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(title: Text('Animate a widget using a physics simulation')),
       body: const DraggableCard(
         child: FlutterLogo(
           size: 128,
